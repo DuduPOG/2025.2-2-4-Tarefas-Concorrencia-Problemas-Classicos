@@ -1,59 +1,3 @@
-# Atividade avaliativa do 2o bimestre - Implementar solução para o Problema do jantar dos filósofos em python com thread
-
-## Contexto
-
-**Disciplina**: Sistemas operacionais
-**Semestre letivo**: 2025.2
-**Avaliação**: 4a atividade avaliativa do bimestre
-**Time de desenvolvimento**: A solução do problema pode ser feita em grupo, com ou sem ajuda de assistente, mas a **entrega deve ser individual via fork desse repositório**.
-**Deadline**: 08/02/2026 com apresentação em 09/02/2026
-
-## Descrição do Problema
-
-O Problema do Jantar dos Filósofos é um problema clássico de concorrência que ilustra os desafios de sincronização entre múltiplos processos que competem por recursos compartilhados.
-
-## Requisitos da Implementação
-
-1. ✅ O processamento dos filósofos devem ser threads em 1 único processo
-2. ✅ São 5 filósofos sentados à mesa
-3. ✅ Antes de comer, o filósofo deve pegar 2 talheres
-4. ✅ Após comer, o filósofo devolve os talheres à mesa
-5. ✅ Como os palitos são compartilhados, 2 filósofos vizinhos não podem comer ao mesmo tempo
-6. ✅ Os filósofos não conversam entre si, nem conhecem os estados uns dos outros
-7. ✅ Não há um coordenador central
-
-## Entrega deve conter
-
-1. Código fonte em python com as libs em requirements
-2. Relatório no arquivo `relatorio.md` com a estrutura abaixo
-   - Título
-   - Contexto inicial do trabalho (introdução)
-   - Descrevendo a solução em python para o jantar dos filósofos
-     - Implementando o algoritmo
-       - Qual o algoritmo utilizado
-       - Implementação do algoritmo em python
-     - Tratando impasse
-       - Qual a estratégia de tratamento de impasses
-       - Implementação do tratamento de impasse em python
-   - Executar o código e descrever comportamento observado
-   - Considerações finais
-
-**Lembre**: 
-- é necessário fazer fork desse repositório.
-- o relatório pode conter imagens ou bloco de código para as saídas
-
-## Conceitos de Concorrência Demonstrados nesse projeto
-
-- **Exclusão Mútua**: Uso de locks para garantir acesso exclusivo aos recursos (talheres)
-- **Sincronização**: Coordenação entre threads sem comunicação direta
-- **Prevenção de Deadlock**: Técnica de ordenação de recursos
-- **Condição de Corrida**: Evitada através do uso adequado de locks
-
-## Código gerado pelo copilot para este trabalho
-
-`src/jantar_filosofos.py`
-
-```python
 #!/usr/bin/env python3
 """
 Solução para o Problema do Jantar dos Filósofos
@@ -200,4 +144,3 @@ def jantar_dos_filosofos():
 
 if __name__ == "__main__":
     jantar_dos_filosofos()
-```
